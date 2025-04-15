@@ -3,6 +3,7 @@
 🎉 We have been accepted at AAAI-2025!
 
 This is the official code for the 《MSE-Adapter: A Lightweight Plugin Endowing LLMs with the Capability to Perform Multimodal Sentiment Analysis and Emotion Recognition》 [![arXiv](https://img.shields.io/badge/arXiv-2502.12478-red)](https://arxiv.org/abs/2502.12478)
+[![AAAI](https://img.shields.io/badge/AAAI_2025-%23007BFF)](https://ojs.aaai.org/index.php/AAAI/article/download/34755/36910)
 
 ![Overall](Fig/overall.jpg)
 *Fig1: The comprehensive framework integrating MSE-Adapter with LLM.*
