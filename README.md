@@ -21,6 +21,7 @@ pip install -r requirements.txt
 ```
 🚨 **Critical Notice (2025/04/29 update)**: It is **highly recommended** to create a new **virtual environment** directly using `requirements.txt`. If that's not feasible, at least ensure that the `transformers` version matches exactly. Otherwise, the training loss may decrease as expected, but the evaluation metrics could be abnormal, severely impacting the model's performance.
 
+
 ### 📂 Step 2: Download the Dataset
 - You can download the dataset at the link below：
    - [MOSEI](https://huggingface.co/datasets/AZYoung/MOSEI_processed)📦
