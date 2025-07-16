@@ -20,6 +20,8 @@ This is the official code for the 《MSE-Adapter: A Lightweight Plugin Endowing 
 
 </div>
 
+---
+
 ## 🚀 Get Started! (Take MSE-ChatGLM3-6B as an example.)
 
 ### 🔧 Step 1: Create the Environment
