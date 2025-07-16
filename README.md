@@ -11,10 +11,14 @@
 </div>
 
 ---
-This is the official code for the 《MSE-Adapter: A Lightweight Plugin Endowing LLMs with the Capability to Perform Multimodal Sentiment Analysis and Emotion Recognition》 
+This is the official code for the 《MSE-Adapter: A Lightweight Plugin Endowing LLMs with the Capability to Perform Multimodal Sentiment Analysis and Emotion Recognition》. 
 
 ![Overall](Fig/overall.png)
+<div align="center">
+    
 *Fig1: The comprehensive framework integrating MSE-Adapter with LLM.*
+
+</div>
 
 ## 🚀 Get Started! (Take MSE-ChatGLM3-6B as an example.)
 
