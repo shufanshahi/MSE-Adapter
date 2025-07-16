@@ -1,11 +1,13 @@
 <div align="center">
 
-# 🌟 The Official Implementation of MSE-Adapter
+# 😊 The Official Implementation of MSE-Adapter
 
-[![arXiv](https://img.shields.io/badge/arXiv-2502.12478-red)](https://arxiv.org/abs/2502.12478)
-[![AAAI](https://img.shields.io/badge/AAAI_2025-%23003973)](https://ojs.aaai.org/index.php/AAAI/article/download/34755/36910)
+<p align="center">
+    <a href="https://arxiv.org/abs/2502.12478"><img src="https://img.shields.io/badge/arXiv-2502.12478-b31b1b?style=for-the-badge" alt="arXiv"></a>
+    <a href="https://ojs.aaai.org/index.php/AAAI/article/download/34755/36910"><img src="https://img.shields.io/badge/AAAI-2025-003973?style=for-the-badge" alt="AAAI 2025"></a>
+</p>
 
-🎉 **We have been accepted at AAAI-2025!**
+🎉🎉 **We have been accepted at AAAI-2025!**
 </div>
 
 ---
