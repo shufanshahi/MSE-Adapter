@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="https://arxiv.org/abs/2502.12478"><img src="https://img.shields.io/badge/arXiv-2502.12478-b31b1b?style=for-the-badge" alt="arXiv"></a>
-    <a href="https://ojs.aaai.org/index.php/AAAI/article/download/34755/36910"><img src="https://img.shields.io/badge/AAAI-2025-003973?style=for-the-badge" alt="AAAI 2025"></a>
+    <a href="https://ojs.aaai.org/index.php/AAAI/article/view/34755"><img src="https://img.shields.io/badge/AAAI-2025-003973?style=for-the-badge" alt="AAAI 2025"></a>
 </p>
 
 🎉🎉 **We have been accepted at AAAI-2025!**
