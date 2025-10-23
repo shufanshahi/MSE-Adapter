@@ -33,19 +33,7 @@ def run(args):
                                         f'{args.modelName}-{args.datasetName}-{args.train_mode}.pth')
     
     if len(args.gpu_ids) == 0 and torch.cuda.is_available():
-        # load free-most gpu
-        pynvml.nvmlInit()
-        dst_gpu_id, min_mem_used = 0, 1e16
-        for g_id in [0, 1, 2, 3]:
-            handle = pynvml.nvmlDeviceGetHandleByIndex(g_id)
-            meminfo = pynvml.nvmlDeviceGetMemoryInfo(handle)
-            mem_used = meminfo.used
-            if mem_used < min_mem_used:
-                min_mem_used = mem_used
-                dst_gpu_id = g_id
-        print(f'Find gpu: {dst_gpu_id}, use memory: {min_mem_used}!')
-        logger.info(f'Find gpu: {dst_gpu_id}, with memory: {min_mem_used} left!')
-        args.gpu_ids.append(dst_gpu_id)
+        args.gpu_ids.append(0)
     # device
     using_cuda = len(args.gpu_ids) > 0 and torch.cuda.is_available()
     logger.info("Let's use the GPU %d !" % int(args.gpu_ids[0]))
@@ -196,7 +184,7 @@ def parse_args():
                         help='support CMCM')
     parser.add_argument('--datasetName', type=str, default='sims',
                         help='support mosi/mosei/simsv2/iemocap/meld/cherma')
-    parser.add_argument('--root_dataset_dir', type=str, default='/home/young/DL/multimodal_dataset/',
+    parser.add_argument('--root_dataset_dir', type=str, default='/content/datasets/',
                         help='Location of the root directory where the dataset is stored')
     parser.add_argument('--num_workers', type=int, default=0,
                         help='num workers of loading data')
@@ -204,7 +192,7 @@ def parse_args():
                         help='path to save results.')
     parser.add_argument('--res_save_dir', type=str, default='results/results',
                         help='path to save results.')
-    parser.add_argument('--pretrain_LM', type=str, default='/data/huggingface_model/Qwen/Qwen-1_8B/',
+    parser.add_argument('--pretrain_LM', type=str, default='/content/Qwen-1_8B/',
                         help='path to load pretrain LLM.')
     parser.add_argument('--gpu_ids', type=list, default=[],
                         help='indicates the gpus will be used. If none, the most-free gpu will be used!')   #使用GPU1
@@ -220,5 +208,5 @@ if __name__ == '__main__':
             args.train_mode = 'classification'
 
         args.datasetName = data_name
-        args.seeds = [1111, 2222, 3333, 4444, 5555]
+        args.seeds = [1111, 2222, 3333]
         run_normal(args)
